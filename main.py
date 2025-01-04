@@ -53,7 +53,9 @@ def on_init(state):
     ]
     new_conv = create_conv(state)
     state.conv.update_content(state, new_conv)
+
 # TODO #9: Define helper functions for the chatbot
+
 def create_conv(state):
     messages_dict = {}
     with tgb.Page() as conversation:
